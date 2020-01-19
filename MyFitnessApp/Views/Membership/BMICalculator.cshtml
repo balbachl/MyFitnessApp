@@ -1,0 +1,42 @@
+﻿@model MyFitnessApp.Models.BMI
+@{
+    ViewBag.Title = "BMI Calculator";
+    var BMImessage = "";
+    if (IsPost)
+    {
+        var w = Request["weight"];
+        var h = Request["height"];
+        var bmi = (w.AsFloat() * 703) / (h.AsFloat() * h.AsFloat());
+        var message = "";
+        if (bmi< 18.5)
+        {
+            message = "BMI's less than 18.5 indicates you are underweight";
+        }
+        else if(bmi>18.5 && bmi < 25)
+        {
+            message += "A BMI between 18.5-25 is a normal weight";
+        }else if (bmi>=25 && bmi < 30)
+        {
+            message += "A BMI between 25 and 30 indicates you are overweight";
+        }
+        else
+        {
+            message += "A BMI greater than 30 indicates obesity";
+        }
+
+        BMImessage = "Your BMI is " + bmi + " " + message;
+    }
+}
+
+<h2>BMI Calculator</h2>
+<html>
+<body>
+    <form action="" method="post">
+        <p>ID:<input type="number" name="ID" id="ID" /></p>
+        <p>Weight:<input type="number" name="weight" id="weight" /></p>
+        <p>Height:<input type="number" name="height" id="height" /></p>
+        <p><button type="submit">Submit</button></p>
+    </form>
+    <p>@BMImessage</p>
+</body>
+</html>

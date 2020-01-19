@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Membership List";
+    string[] members = { "Stevie Wonder", "Bruno Mars", "Debbie Harry", "Steven Tyler", "Stevie Nicks",
+    "Elton John","Beyonce Knowles", "Katy Perry","Jon Bon Jovi", "Stefani Germanotta","Billy Joel", "Alecia Moore" };
+}
+<div style="background-color:peachpuff; padding:1%;border-radius:30px;margin-left:-4%;">
+    <img src="~/Content/biking.jpg" alt="black and white photo of biker" 
+         style="float:right;width:35%; outline:5px inset black;outline-offset:5px;margin-top:2%;margin-right:5%;" />
+    <h2>Membership List</h2>
+    <ul>
+        @foreach (var m in members)
+        {
+            <li>@m</li>
+        }
+    </ul>
+</div>

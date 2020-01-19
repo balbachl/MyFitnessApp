@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Fit for Life";
+}
+
+<div class="jumbotron" style="background-color:peachpuff;border-radius:30px;">
+    <h1>Fit For Life</h1>
+    <p class="lead">
+        The fit for life app includes a BMI, fitness tracking system,
+        recipes, tips, tricks and more to help you meet your fitness goals.
+    </p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            Start by adding your membership information to the app.  @Html.ActionLink("Membership Information", "MemberInfo", "Membership")
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Logging Activities</h2>
+        <p>Log your activities in our fitness tracker</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Finding Recipes</h2>
+        <p>Find recipes based on food preferences.  View nutritional content before you make the meal!</p>
+    </div>
+    <div class="col-md-12">
+        <img src="~/Content/running.jpg" alt="women running in the sunset"
+             style="height:200px;outline:10px solid black;outline-offset:5px;float:left;margin:2%;" />
+        <img src="~/Content/cycling.jpg" alt="biking through the forest"
+             style="height:200px;outline:10px solid black;outline-offset:5px;float:left;margin:2%;" />
+        <img src="~/Content/seniors-walking.jpg" alt="seniors walking"
+             style="height:200px;outline:10px solid black;outline-offset:5px;margin:2%;" />
+    </div>
+</div>

@@ -1,0 +1,19 @@
+﻿body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:linen;
+}
+a:link{
+    color:orangered;
+    text-decoration:none;
+}
+a:active{
+    color:darkgoldenrod;
+}
+a:hover{
+    color:white;
+    background-color:orangered;
+    text-decoration:none;
+}
+a:visited{
+    color:darkgreen;
+}

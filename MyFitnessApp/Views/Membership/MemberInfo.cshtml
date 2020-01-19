@@ -1,0 +1,19 @@
+﻿@model MyFitnessApp.Models.Members
+@{
+    ViewBag.Title = "Member Information";
+}
+
+<h2>Member Information Form</h2>
+<p>Please fill in the information form:</p>
+<form name="memberInfo" method="post">
+    <p>ID#: <input type="number" name="memID" id="memID" /></p>
+    <p>Name: <input type="text" name="memName" id="memName" /></p>
+    <p>Age: <input type="number" name="memAge" id="memAge" /></p>
+    <p>Identifies as:<select name="memGender">
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            </select>
+    </p>
+    <p><button type="submit">Submit</button></p>
+</form>
+
